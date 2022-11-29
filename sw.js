@@ -9,7 +9,7 @@ self.addEventListener(
                 function(cache){
                     cache.addAll(
                         [
-                            'manifest.json',
+                            'manifiesto.json',
                             'index.html',
                             'sw.js',
                             'w3.css',
