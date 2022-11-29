@@ -1,0 +1,25 @@
+{
+    "name":"App Web Progresiva",
+    "short_name":"AWP",
+    "start_url":"index.html",
+    "display":"standalone",
+    "theme_color":"#FFDF00",
+    "background_color":"#FFDF00",
+    "icons":[
+        {
+            "src":"./icon/icono.jpg",
+            "sizes":"255x255",
+            "type":"image/jpg"
+        },
+        {
+            "src":"./icon/icono.jpg",
+            "sizes":"192x192",
+            "type":"image/jpg"
+        },
+        {
+            "src":"./icon/icono.jpg",
+            "sizes":"144x144",
+            "type":"image/jpg"
+        }    
+    ]
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PWA</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="w3.css">
+    </head>
+    <body>
+        <div class="w3-row">
+            <div class="w3-col s12 w3-purple w3-center"><h1 style="color: white;">Plano Cartesiano</h1></div>        
+        </div>
+        <div class="w3-row">
+            <div class="w3-col s3 w3-cyan w3-center" style="height:800px;">
+                <p style="font-size: 140%;">
+                    <a style="color: black;">ax + by = c (Ec. 1)</a>
+                    <br />
+                    <a style="color: black;">dx + ey = f (Ec. 2)</a>
+                    <br />
+                    <br />
+                    <a style="color: black;">a: </a>
+                    <input id="A" style="width: 10%; text-align: center;" />
+                    <a style="color: black;">b: </a>
+                    <input id="B" style="width: 10%; text-align: center;" />
+                    <a style="color: black;">c: </a>
+                    <input id="C" style="width: 10%; text-align: center;" />
+                    <br /><br />
+                    <a style="color: black;">d: </a>
+                    <input id="D" style="width: 10%; text-align: center;" />
+                    <a style="color: black;">e: </a>
+                    <input id="E" style="width: 10%; text-align: center;" />
+                    <a style="color: black;">f: </a>
+                    <input id="F" style="width: 10%; text-align: center;" />
+                    <br /><br />
+                    <a style="color: black;">Intervalo [x1, x2] en X para Ec. 1:</a>
+                    <br />
+                    <a style="color: black;">x1: </a>
+                    <input id="X1" style="width: 10%; text-align: center;" />
+                    <a style="color: black;">x2: </a>
+                    <input id="X2" style="width: 10%; text-align: center;" />
+                    <br /><br />
+                    <a style="color: black;">Intervalo [x3, x4] en X para Ec. 2:</a>
+                    <br />
+                    <a style="color: black;">x3: </a>
+                    <input id="X3" style="width: 10%; text-align: center;" />
+                    <a style="color: black;">x4: </a>
+                    <input id="X4" style="width: 10%; text-align: center;" />
+                    <br/><br/>
+                    <button onclick="GetData()" type="button">Encontrar x , y</button>
+                    <br /><br />
+                    <a id="REC1" style="color: black;"></a>
+                    <br />
+                    <a id="REC2" style="color: black;"></a>
+                    <br /><br />
+                    <a id="RX" style="color: black;"></a>
+                    <br />
+                    <a id="RY" style="color: black;"></a>
+                </p>
+            </div>
+            <div class="w3-col s9 w3-white w3-center">
+                <canvas 
+                    id="lienzo5"
+                    style=" position:absolute"
+                    width="1070"
+                    height="550"
+                ></canvas>
+                <canvas 
+                    id="lienzo4"
+                    style=" position:absolute"
+                    width="1070"
+                    height="550"
+                ></canvas>
+                <canvas 
+                    id="lienzo3"
+                    style=" position:absolute"
+                    width="1070"
+                    height="550"
+                ></canvas>
+                <canvas 
+                    id="lienzo2"
+                    style=" position:absolute"
+                    width="1070"
+                    height="550"
+                ></canvas>
+                <canvas 
+                    id="lienzo"
+                    width="1070"
+                    height="550"
+                ></canvas>
+                <div id="contenido" style="color: black;">
+                </div>
+            </div>
+        </div>
+        <script src="fig.js"></script>
+    </body>
+</html>
