@@ -9,8 +9,13 @@ self.addEventListener(
                 function(cache){
                     cache.addAll(
                         [
+                            'manifest.json',
+                            'index.html',
+                            'sw.js',
+                            'w3.css',
                             'fig.js',
-                            'w3.css'
+                            'descarga.png',
+                            './css/bootstrap.min.css'
                         ]
                     );        
                 }
